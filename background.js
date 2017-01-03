@@ -1,7 +1,5 @@
 chrome.contextMenus.onClicked.addListener(onClickContextMenu);
 
-
-
 chrome.tabs.onUpdated.addListener( function (tabId, changeInfo, tab) {
     if (changeInfo.status == 'loading') {
         reload_menus();
@@ -12,10 +10,6 @@ function reload_menus() {
     chrome.contextMenus.removeAll();
     chrome.contextMenus.create({"title": "Wordreference search: %s", "contexts":["selection"], "id": "contextWordref"});
 }
-
-/*chrome.runtime.onInstalled.addListener(function() {
-    chrome.contextMenus.create({"title": "Wordreference search: %s", "contexts":["selection"], "id": "contextWordref"});
-});*/
 
 function onClickContextMenu(info, tab) {
     var selectionText = ( info.selectionText );
