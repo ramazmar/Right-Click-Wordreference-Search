@@ -1,7 +1,7 @@
 {
 "name":"Right-Click Wordreference Search",
 "description":"Use the right-click menu to translate for selected text in Wordreference",
-"version":"0.4.2.4",
+"version":"0.5.0.1",
 "manifest_version":2,
 "web_accessible_resources": [
     "fonts/*",

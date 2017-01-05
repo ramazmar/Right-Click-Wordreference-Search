@@ -12,16 +12,20 @@ p {
 
 .btn-primary {
     color: #fff;
-    background-color: #e45f56!important;
-    border-color: #707B88!important;
+    background-color: #5e58c7!important;
+    /*border-color: #707B88!important;*/
+}
+
+.wroptions-title {
+    color:#5e58c7;
 }
 
 #userconf {
-    padding:1px 10px 10px 10px;
-    background:#4AAAA5;
+    padding:10px 10px 10px 10px;
+    /*background:#4AAAA5;*/
 }
 #userstatus {
-    background:#7ACCC8;
+    background:#BCB8FF;
     margin:10px 0px 10px 0px;
 }
 </style>
@@ -30,20 +34,30 @@ p {
 <script src="settings.js"></script>
 <link rel="stylesheet" type="text/css" href="includeds/bootstrap.min.css" media="screen" />
 <body>
-    <div id="userconf" class="col-md-4" >
-	<p >Default language to translate</p>
-        <div class="form-inline">
-            <div>
-        		From <select id="source"  class="form-control"> 
-        		</select>
-        		into
-        		<select id="dest" class="form-control">
-        		</select>
-        	</p>
+
+    <div style=''>
+        <div class="row" style="magin:0px">
+            <div class="col-lg-6 col-md-8 col-sm-12 col-xs-12" style="padding:20px">
+
+                <div id="userconf" class="modal-content" >
+                        <div class="wroptions-title" ><p>Default language to translate</p></div>
+
+                        <div class="form-inline">
+                            <div>
+                                From <select id="source"  class="form-control"> 
+                                </select>
+                                into
+                                <select id="dest" class="form-control">
+                                </select>
+                            <button id="save" class="btn btn-primary" >Save Options</button>
+                            </div>
+                
+                            <div id="userstatus"></div>
+                        </div>
+               </div>
             </div>
-    	    <div id="userstatus"></div>
-    	    <button id="save" class="btn btn-primary" >Save Options</button>
         </div>
     </div>
-	</body>
+
+</body>
 </html>
